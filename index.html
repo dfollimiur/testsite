@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Scuola - Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigazione -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo Scuola" height="50">
+                <span>Istituto Tecnico Informatico</span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="chisiamo.html"><i class="fas fa-users"></i> Chi Siamo</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contenuto principale -->
+    <main class="container">
+        <section class="hero">
+            <h1>Benvenuti nel nostro sito!</h1>
+            <p>Un esempio pratico di sviluppo web per studenti di informatica</p>
+            <a href="chisiamo.html" class="btn">Scopri di più</a>
+        </section>
+
+        <section class="features">
+            <h2>Cosa troverai qui</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Esempi di Codice</h3>
+                    <p>HTML, CSS e JavaScript spiegati passo dopo passo</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Progetti Pratici</h3>
+                    <p>Esercizi reali per mettere in pratica le competenze</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaborazione</h3>
+                    <p>Impara a lavorare in team come sviluppatori professionisti</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>Ultime Novità</h2>
+            <div class="news-card">
+                <h3>GitHub in Classe</h3>
+                <p class="date"><i class="far fa-calendar"></i> 15 Ottobre 2023</p>
+                <p>Stiamo imparando a usare Git e GitHub per gestire i nostri progetti di sviluppo web.</p>
+                <p>Prossimo passo: creare la nostra prima pull request!</p>
+            </div>
+        </section>
+
+        <!-- Esempio visivo di GitHub -->
+        <section class="github-example">
+            <h2><i class="fab fa-github"></i> Come funziona GitHub</h2>
+            <div class="github-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p><strong>Fork</strong><br>Copia il repository</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p><strong>Modifica</strong><br>Lavora sul tuo branch</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p><strong>Pull Request</strong><br>Proponi le tue modifiche</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <p><strong>Merge</strong><br>Il codice diventa ufficiale!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contattaci</h4>
+                    <p><i class="fas fa-envelope"></i> info@scuola.it</p>
+                    <p><i class="fas fa-phone"></i> 0123 456789</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Seguici</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Classe 5 Informatica - Esempio didattico</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

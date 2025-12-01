@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Scuola - Chi Siamo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigazione -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo Scuola" height="50">
+                <span>Istituto Tecnico Informatico</span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="chisiamo.html" class="active"><i class="fas fa-users"></i> Chi Siamo</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contenuto principale -->
+    <main class="container">
+        <section class="page-header">
+            <h1>Chi Siamo</h1>
+            <p>La classe 5 Informatica dell'Istituto Tecnico</p>
+        </section>
+
+        <section class="about-content">
+            <div class="about-text">
+                <h2>Il nostro progetto</h2>
+                <p>Siamo un gruppo di studenti di informatica appassionati di sviluppo web e programmazione. Questo sito è stato creato come progetto didattico per imparare:</p>
+                
+                <ul class="skills-list">
+                    <li><i class="fas fa-check"></i> HTML5 e CSS3 moderno</li>
+                    <li><i class="fas fa-check"></i> JavaScript e DOM manipulation</li>
+                    <li><i class="fas fa-check"></i> Responsive Web Design</li>
+                    <li><i class="fas fa-check"></i> Controllo versione con Git</li>
+                    <li><i class="fas fa-check"></i> Collaborazione su GitHub</li>
+                </ul>
+            </div>
+            
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-laptop-code"></i>
+                    <p>Team di sviluppo</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <h2>La nostra squadra di sviluppo</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Frontend Developer</h3>
+                    <p>Si occupa dell'interfaccia utente e dell'esperienza visiva del sito</p>
+                    <div class="member-skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Backend Developer</h3>
+                    <p>Gestisce la logica del sito e l'integrazione con database</p>
+                    <div class="member-skills">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>API</span>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>GitHub Manager</h3>
+                    <p>Coordina le pull request e gestisce il repository</p>
+                    <div class="member-skills">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Code Review</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione GitHub specifica -->
+        <section class="github-workflow">
+            <h2><i class="fab fa-github"></i> Il nostro workflow su GitHub</h2>
+            <div class="workflow-diagram">
+                <div class="workflow-step">
+                    <h3>1. Issue</h3>
+                    <p>Identifichiamo un compito o un bug da risolvere</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <h3>2. Branch</h3>
+                    <p>Creiamo un branch separato per lavorare</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <h3>3. Pull Request</h3>
+                    <p>Proponiamo le modifiche per la revisione</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <h3>4. Merge</h3>
+                    <p>Dopo l'approvazione, uniamo al codice principale</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>La nostra scuola</h4>
+                    <p>Via del Codice, 123</p>
+                    <p>00100 Roma</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Questo sito è:</h4>
+                    <p>Un progetto didattico open source</p>
+                    <a href="https://github.com" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> Vedi su GitHub
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Classe 5 Informatica - Tutti i file sono di esempio didattico</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

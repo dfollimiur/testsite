@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altro - Servizi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-box {
+            flex: 1 1 calc(33% - 20px);
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            min-width: 200px;
+        }
+
+        .service-box h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 700px) {
+            .service-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pagina Altro</h1>
+    <p>Benvenuto nella nostra pagina “Altro”</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="altro.html">Altro</a>
+    <a href="#">Contatti</a>
+</nav>
+
+<div class="container">
+    <h2>Servizi Offerti</h2>
+    <p>Ecco alcuni dei nostri servizi disponibili:</p>
+
+    <div class="services">
+
+        <div class="service-box">
+            <h3>⚙️ Consulenza</h3>
+            <p>Supporto professionale per migliorare i tuoi progetti o la tua attività.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>💻 Sviluppo Web</h3>
+            <p>Creazione di siti moderni, responsive e ottimizzati.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📱 Assistenza Tecnica</h3>
+            <p>Aiuto tecnico per computer, smartphone e configurazioni varie.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🎨 Grafica</h3>
+            <p>Logo design, volantini e grafica digitale personalizzata.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>☁️ Backup & Cloud</h3>
+            <p>Soluzioni di archiviazione sicura per i tuoi dati.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🔧 Manutenzione</h3>
+            <p>Assistenza hardware e manutenzione su PC e periferiche.</p>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2025 - Pagina Altro | Tutti i diritti riservati
+</footer>
+
+</body>
+</html>

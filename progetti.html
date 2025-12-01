@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Scuola - Progetti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+	/* ----------------------------------------------------
+    RESET
+---------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------
+    CONTAINER
+---------------------------------------------------- */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ----------------------------------------------------
+    HEADER / NAVBAR
+---------------------------------------------------- */
+header {
+    background: #1e1e2f;
+    padding: 15px 0;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: #5353e0;
+}
+
+/* Mobile menu button */
+.menu-toggle {
+    display: none;
+    font-size: 1.6rem;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------
+    HERO (home + progetti)
+---------------------------------------------------- */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(120deg, #6b6bff, #9696ff);
+    color: #fff;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.small-hero {
+    padding: 40px 20px;
+    background: linear-gradient(120deg, #3e3ee9, #7d7df4);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+/* ----------------------------------------------------
+    FEATURE SECTION (cards)
+---------------------------------------------------- */
+.features {
+    margin: 50px 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #5353e0;
+    margin-bottom: 10px;
+}
+
+/* Stile specifico per pagina progetti */
+.project-card .date {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ----------------------------------------------------
+    NEWS SECTION
+---------------------------------------------------- */
+.news {
+    margin-bottom: 50px;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow
+</style>
+</head>
+<body>
+    <!-- Header/Navigazione -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo Scuola" height="50">
+                <span>Istituto Tecnico Informatico</span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="chisiamo.html"><i class="fas fa-users"></i> Chi Siamo</a></li>
+                    <li><a href="progetti.html" class="active"><i class="fas fa-folder-open"></i> Progetti</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contenuto principale -->
+    <main class="container">
+
+        <section class="hero small-hero">
+            <h1>I nostri progetti</h1>
+            <p>Una raccolta dei lavori realizzati dagli studenti dell’indirizzo informatico.</p>
+        </section>
+
+        <section class="features">
+            <h2>Progetti in Evidenza</h2>
+            <div class="feature-grid">
+
+                <!-- Progetto 1 -->
+                <div class="feature-card project-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Robot Line Follower</h3>
+                    <p>Un robot in grado di seguire una linea sul pavimento utilizzando sensori infrarossi.</p>
+                    <p class="date"><i class="far fa-calendar"></i> Maggio 2024</p>
+                </div>
+
+                <!-- Progetto 2 -->
+                <div class="feature-card project-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Storage School</h3>
+                    <p>Piattaforma web per archiviare e condividere file tra studenti e docenti.</p>
+                    <p class="date"><i class="far fa-calendar"></i> Febbraio 2024</p>
+                </div>
+
+                <!-- Progetto 3 -->
+                <div class="feature-card project-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Videogioco 2D in JavaScript</h3>
+                    <p>Un platform sviluppato dagli studenti con grafica personalizzata.</p>
+                    <p class="date"><i class="far fa-calendar"></i> Dicembre 2023</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>Progetti Recenti</h2>
+
+            <div class="news-card">
+                <h3>App Android per l'orario scolastico</h3>
+                <p class="date"><i class="far fa-calendar"></i> 10 Novembre 2023</p>
+                <p>Un’applicazione sviluppata con Kotlin che permette agli studenti di consultare l’orario aggiornato in tempo reale.</p>
+            </div>
+
+            <div class="news-card">
+                <h3>Registro Elettronico Open Source</h3>
+                <p class="date"><i class="far fa-calendar"></i> 3 Giugno 2023</p>
+                <p>Un progetto mirato a creare un registro elettronico completamente open source per la gestione delle valutazioni.</p>
+            </div>
+
+            <div class="news-card">
+                <h3>Stazione Meteo con Arduino</h3>
+                <p class="date"><i class="far fa-calendar"></i> 15 Marzo 2023</p>
+                <p>Dispositivo in grado di raccogliere temperatura, umidità e pressione con invio dati su dashboard web.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contattaci</h4>
+                    <p><i class="fas fa-envelope"></i> info@scuola.it</p>
+                    <p><i class="fas fa-phone"></i> 0123 456789</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Seguici</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Classe 5 Informatica - Esempio didattico</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
